@@ -23,12 +23,11 @@ import unittest
 import time
 from collections import defaultdict
 
-#INITIAL IDEA THAT WOULDN'T WORK BECAUSE eventually you catch up to the old string
 def urlify(str, trueLength):
     chars = list(str)
     oldIndex = trueLength - 1
     newindex = len(chars) - 1
-    print(chars)
+
     while oldIndex >= 0:
         if(chars[oldIndex] == " "):
             chars[newindex] = "0"
@@ -40,7 +39,6 @@ def urlify(str, trueLength):
             newindex -= 1
         oldIndex -= 1
 
-    print(chars)
     return "".join(chars)
 
 def urlify_pythonic(str, trueLength):
