@@ -6,15 +6,15 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s):
-        dict = {}
-        max = start = 0
+        dct = {}
+        start = maxLen = 0
+        
+        for end, value in enumerate(s):
+            if value in dct:
+                start = max(dct[value], start)
+                
+            curr = end - start + 1
+            maxLen = max(curr, maxLen)
+            dct[value] = end + 1
 
-        for i,character in enumerate(s):
-            if dict[character] > start:
-                start = dict[character] + 1
-            curr = i - start + 1
-            if curr > max:
-                max = curr
-            dict[character] = 1
-
-        return max
+        return maxLen

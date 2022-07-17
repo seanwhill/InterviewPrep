@@ -1,5 +1,5 @@
 # Given a string write a function to check if it's a premutation of a palindrome. The palindrome does not need to be 
-# limited to just dictionary words, you can ignore casing and non letter chars
+# limited to just dictionary words. It will only include lower case letters (a-z) and have no spaces.
 
 # Ex 
 '''
@@ -16,7 +16,7 @@ Ideas:
 
 Examples
 
-Tact Coa
+tactcoa
 ...2ts 2a 2cs
 
 '''
