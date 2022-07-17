@@ -21,7 +21,7 @@ def isAnagram(self, s: str, t: str) -> bool:
         
     return True
 
-def isAnagra2(self, s: str, t: str) -> bool:
+def isAnagram2(self, s: str, t: str) -> bool:
     if len(s) != len(t):
         return False
     

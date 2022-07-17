@@ -24,7 +24,7 @@ class LinkedList:
 
     def __str__(self):
         values = [str(x) for x in self]
-        return " -> ".join(values)
+        return " -> ".join(values)7
 
     def __len__(self):
         result = 0

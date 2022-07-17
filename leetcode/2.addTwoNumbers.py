@@ -14,7 +14,6 @@ class Solution:
         res = curr = ListNode(0)
         carry = 0
 
-
         while(l1 or l2 or carry):
             val = 0 
             if(l1):

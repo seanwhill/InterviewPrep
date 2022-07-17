@@ -14,7 +14,6 @@ from typing import *
 def groupAnagrams_SLOW(self, strs: List[str]) -> List[List[str]]:
     seen = set()
     res = []
-    print(self.isAnagram("eat", "tan"))
     
     for i in range(len(strs)):
         if(strs[i] not in seen):
